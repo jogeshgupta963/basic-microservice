@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  server:
+    build: .
+    container_name: moderation
+    ports:
+      - 4003:4003
+    volumes:
+      - /home/jogesh/Documents/Github/blog/moderation:/app
+      - /app/node_modules

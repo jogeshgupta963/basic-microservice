@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  server:
+    build: .
+    container_name: event-bus
+    ports:
+      - 4005:4005
+    volumes:
+      - /home/jogesh/Documents/Github/blog/event-bus:/app
+      - /app/node_modules

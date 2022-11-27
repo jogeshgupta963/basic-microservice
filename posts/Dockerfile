@@ -10,5 +10,5 @@ RUN npm i
 
 COPY . .
 
-CMD ["nodemon","app.js"]
+CMD ["npx","nodemon","app.js"]
 

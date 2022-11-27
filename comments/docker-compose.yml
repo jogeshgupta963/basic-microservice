@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  server:
+    build: .
+    container_name: comments
+    ports:
+      - 4001:4001
+    volumes:
+      - /home/jogesh/Documents/Github/blog/comments:/app
+      - /app/node_modules

@@ -1,17 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: posts-depl
+  name: comments-depl
 spec:
   replicas: 1 #no of pods
   selector:
     matchLabels:
-      app: posts
+      app: comments
   template:
     metadata:
       labels:
-        app: posts
+        app: comments
     spec:
       containers:
-        - name: posts
-          image: posts:0.0.1
+        - name: comments
+          image: comments-server
+          imagePullPolicy: Never
