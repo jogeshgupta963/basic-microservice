@@ -9,5 +9,6 @@ RUN npm i -g nodemon
 RUN npm i 
 
 COPY . .
-CMD ["nodemon","index.js"]
+
+CMD ["nodemon","app.js"]
 
